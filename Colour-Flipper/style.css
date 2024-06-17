@@ -1,3 +1,63 @@
-.sequ{
-    background-color: black;
+body{
+    margin: 0;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+header{
+    border:solid;
+    border-radius: 2em;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    .separator{
+        border: solid;  
+    }
+    a{
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 2rem;
+        color:black;
+
+        &:hover{
+            color: rgb(153, 221, 153);
+        }
+        &:current{
+            color: red;
+        }
+    }
+
+}
+
+
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+   
+}
+
+.contents{
+    display: grid;
+    place-items: center;
+    
+}
+
+button{
+    padding: 1em;
+    margin: 2em;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+
+    &:hover{
+        background-color:  rgb(153, 221, 153);
+    }
+    &:active{
+        background-color: white;
+    }
+}
+
