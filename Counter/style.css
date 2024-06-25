@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+}
+
+.container{
+    display: grid;
+    text-align: center;
+    width: 500px;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 1.5em;
+}
+
+h1,h2{
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+button{
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.5s, background 0.5s ;
+    cursor: pointer;
+    
+    &:hover{
+        background: black;
+        color: white;
+    }
+    &:active{
+        opacity: 0.5;
+    }
+}
